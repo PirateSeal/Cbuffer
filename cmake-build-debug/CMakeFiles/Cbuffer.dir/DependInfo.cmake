@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/PirateSeal/dev/Cbuffer/buffer.c" "/Users/PirateSeal/dev/Cbuffer/cmake-build-debug/CMakeFiles/Cbuffer.dir/buffer.c.o"
+  "/Users/PirateSeal/dev/Cbuffer/lexer.c" "/Users/PirateSeal/dev/Cbuffer/cmake-build-debug/CMakeFiles/Cbuffer.dir/lexer.c.o"
   "/Users/PirateSeal/dev/Cbuffer/main.c" "/Users/PirateSeal/dev/Cbuffer/cmake-build-debug/CMakeFiles/Cbuffer.dir/main.c.o"
   "/Users/PirateSeal/dev/Cbuffer/utils.c" "/Users/PirateSeal/dev/Cbuffer/cmake-build-debug/CMakeFiles/Cbuffer.dir/utils.c.o"
   )

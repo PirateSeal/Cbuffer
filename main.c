@@ -12,9 +12,8 @@ int main() {
     buffer_t* buffer = malloc(sizeof(buffer_t));
 
     buf_init(buffer, file);
+    char c = buf_getchar(buffer);
 
-    buf_print(buffer);
 
-    printf("Hello, World!\n");
     return 0;
 }

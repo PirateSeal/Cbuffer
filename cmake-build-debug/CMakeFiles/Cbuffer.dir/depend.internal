@@ -5,6 +5,10 @@ CMakeFiles/Cbuffer.dir/buffer.c.o
  /Users/PirateSeal/dev/Cbuffer/buffer.c
  /Users/PirateSeal/dev/Cbuffer/buffer.h
  /Users/PirateSeal/dev/Cbuffer/utils.h
+CMakeFiles/Cbuffer.dir/lexer.c.o
+ /Users/PirateSeal/dev/Cbuffer/buffer.h
+ /Users/PirateSeal/dev/Cbuffer/lexer.c
+ /Users/PirateSeal/dev/Cbuffer/lexer.h
 CMakeFiles/Cbuffer.dir/main.c.o
  /Users/PirateSeal/dev/Cbuffer/buffer.h
  /Users/PirateSeal/dev/Cbuffer/main.c

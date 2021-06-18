@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Cbuffer.dir/buffer.c.o"
+  "CMakeFiles/Cbuffer.dir/lexer.c.o"
   "CMakeFiles/Cbuffer.dir/main.c.o"
   "CMakeFiles/Cbuffer.dir/utils.c.o"
   "Cbuffer"

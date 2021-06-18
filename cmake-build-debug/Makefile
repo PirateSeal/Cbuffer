@@ -169,6 +169,33 @@ buffer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cbuffer.dir/build.make CMakeFiles/Cbuffer.dir/buffer.c.s
 .PHONY : buffer.c.s
 
+lexer.o: lexer.c.o
+
+.PHONY : lexer.o
+
+# target to build an object file
+lexer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cbuffer.dir/build.make CMakeFiles/Cbuffer.dir/lexer.c.o
+.PHONY : lexer.c.o
+
+lexer.i: lexer.c.i
+
+.PHONY : lexer.i
+
+# target to preprocess a source file
+lexer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cbuffer.dir/build.make CMakeFiles/Cbuffer.dir/lexer.c.i
+.PHONY : lexer.c.i
+
+lexer.s: lexer.c.s
+
+.PHONY : lexer.s
+
+# target to generate assembly for a file
+lexer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cbuffer.dir/build.make CMakeFiles/Cbuffer.dir/lexer.c.s
+.PHONY : lexer.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -235,6 +262,9 @@ help:
 	@echo "... buffer.o"
 	@echo "... buffer.i"
 	@echo "... buffer.s"
+	@echo "... lexer.o"
+	@echo "... lexer.i"
+	@echo "... lexer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
