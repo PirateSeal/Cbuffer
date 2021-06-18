@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/PirateSeal/dev/Cbuffer/buffer.h
+stdio.h
+-
+stdbool.h
+-
+
+/Users/PirateSeal/dev/Cbuffer/main.c
+stdio.h
+-
+stdlib.h
+-
+utils.h
+/Users/PirateSeal/dev/Cbuffer/utils.h
+buffer.h
+/Users/PirateSeal/dev/Cbuffer/buffer.h
+
+/Users/PirateSeal/dev/Cbuffer/utils.h
+
