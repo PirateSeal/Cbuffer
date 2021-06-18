@@ -12,15 +12,19 @@ stdio.h
 stdbool.h
 -
 
-/Users/PirateSeal/dev/Cbuffer/main.c
-stdio.h
--
+/Users/PirateSeal/dev/Cbuffer/lexer.c
 stdlib.h
 -
-utils.h
-/Users/PirateSeal/dev/Cbuffer/utils.h
 buffer.h
 /Users/PirateSeal/dev/Cbuffer/buffer.h
+lexer.h
+/Users/PirateSeal/dev/Cbuffer/lexer.h
+stdbool.h
+/Users/PirateSeal/dev/Cbuffer/stdbool.h
+ctype.h
+/Users/PirateSeal/dev/Cbuffer/ctype.h
 
-/Users/PirateSeal/dev/Cbuffer/utils.h
+/Users/PirateSeal/dev/Cbuffer/lexer.h
+buffer.h
+/Users/PirateSeal/dev/Cbuffer/buffer.h
 

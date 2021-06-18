@@ -1,19 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "utils.h"
 #include "buffer.h"
+#include "lexer.h"
+
 
 int main() {
-    print_backtrace();
 
-    FILE* file;
+    FILE *file = NULL;
     file = fopen("text.txt", "r");
-
-    buffer_t* buffer = malloc(sizeof(buffer_t));
+    if (file == NULL)printf("Oups \n");
+    buffer_t *buffer = malloc(sizeof(buffer_t));
 
     buf_init(buffer, file);
-    char c = buf_getchar(buffer);
-
+    long l =  lexer_getnumber(buffer);
+    printf("%d", l);
 
     return 0;
 }

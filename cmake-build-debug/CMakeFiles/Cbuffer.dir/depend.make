@@ -10,8 +10,8 @@ CMakeFiles/Cbuffer.dir/lexer.c.o: ../lexer.c
 CMakeFiles/Cbuffer.dir/lexer.c.o: ../lexer.h
 
 CMakeFiles/Cbuffer.dir/main.c.o: ../buffer.h
+CMakeFiles/Cbuffer.dir/main.c.o: ../lexer.h
 CMakeFiles/Cbuffer.dir/main.c.o: ../main.c
-CMakeFiles/Cbuffer.dir/main.c.o: ../utils.h
 
 CMakeFiles/Cbuffer.dir/utils.c.o: ../utils.c
 
