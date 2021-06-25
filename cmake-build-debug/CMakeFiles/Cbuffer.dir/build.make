@@ -136,12 +136,72 @@ CMakeFiles\Cbuffer.dir\lexer.c.s: cmake_force
  /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\Cbuffer.dir\lexer.c.s /c C:\Users\tcous\Desktop\Others\Cbuffer\lexer.c
 <<
 
+CMakeFiles\Cbuffer.dir\parser.c.obj: CMakeFiles\Cbuffer.dir\flags.make
+CMakeFiles\Cbuffer.dir\parser.c.obj: ..\parser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tcous\Desktop\Others\Cbuffer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Cbuffer.dir/parser.c.obj"
+	C:\PROGRA~2\MICROS~3\2019\ENTERP~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\Cbuffer.dir\parser.c.obj /FdCMakeFiles\Cbuffer.dir\ /FS -c C:\Users\tcous\Desktop\Others\Cbuffer\parser.c
+<<
+
+CMakeFiles\Cbuffer.dir\parser.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cbuffer.dir/parser.c.i"
+	C:\PROGRA~2\MICROS~3\2019\ENTERP~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe > CMakeFiles\Cbuffer.dir\parser.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\tcous\Desktop\Others\Cbuffer\parser.c
+<<
+
+CMakeFiles\Cbuffer.dir\parser.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cbuffer.dir/parser.c.s"
+	C:\PROGRA~2\MICROS~3\2019\ENTERP~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\Cbuffer.dir\parser.c.s /c C:\Users\tcous\Desktop\Others\Cbuffer\parser.c
+<<
+
+CMakeFiles\Cbuffer.dir\ast.c.obj: CMakeFiles\Cbuffer.dir\flags.make
+CMakeFiles\Cbuffer.dir\ast.c.obj: ..\ast.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tcous\Desktop\Others\Cbuffer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Cbuffer.dir/ast.c.obj"
+	C:\PROGRA~2\MICROS~3\2019\ENTERP~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\Cbuffer.dir\ast.c.obj /FdCMakeFiles\Cbuffer.dir\ /FS -c C:\Users\tcous\Desktop\Others\Cbuffer\ast.c
+<<
+
+CMakeFiles\Cbuffer.dir\ast.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cbuffer.dir/ast.c.i"
+	C:\PROGRA~2\MICROS~3\2019\ENTERP~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe > CMakeFiles\Cbuffer.dir\ast.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\tcous\Desktop\Others\Cbuffer\ast.c
+<<
+
+CMakeFiles\Cbuffer.dir\ast.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cbuffer.dir/ast.c.s"
+	C:\PROGRA~2\MICROS~3\2019\ENTERP~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\Cbuffer.dir\ast.c.s /c C:\Users\tcous\Desktop\Others\Cbuffer\ast.c
+<<
+
+CMakeFiles\Cbuffer.dir\symbols.c.obj: CMakeFiles\Cbuffer.dir\flags.make
+CMakeFiles\Cbuffer.dir\symbols.c.obj: ..\symbols.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tcous\Desktop\Others\Cbuffer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Cbuffer.dir/symbols.c.obj"
+	C:\PROGRA~2\MICROS~3\2019\ENTERP~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoCMakeFiles\Cbuffer.dir\symbols.c.obj /FdCMakeFiles\Cbuffer.dir\ /FS -c C:\Users\tcous\Desktop\Others\Cbuffer\symbols.c
+<<
+
+CMakeFiles\Cbuffer.dir\symbols.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Cbuffer.dir/symbols.c.i"
+	C:\PROGRA~2\MICROS~3\2019\ENTERP~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe > CMakeFiles\Cbuffer.dir\symbols.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\tcous\Desktop\Others\Cbuffer\symbols.c
+<<
+
+CMakeFiles\Cbuffer.dir\symbols.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Cbuffer.dir/symbols.c.s"
+	C:\PROGRA~2\MICROS~3\2019\ENTERP~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\Cbuffer.dir\symbols.c.s /c C:\Users\tcous\Desktop\Others\Cbuffer\symbols.c
+<<
+
 # Object files for target Cbuffer
 Cbuffer_OBJECTS = \
 "CMakeFiles\Cbuffer.dir\main.c.obj" \
 "CMakeFiles\Cbuffer.dir\buffer.c.obj" \
 "CMakeFiles\Cbuffer.dir\utils.c.obj" \
-"CMakeFiles\Cbuffer.dir\lexer.c.obj"
+"CMakeFiles\Cbuffer.dir\lexer.c.obj" \
+"CMakeFiles\Cbuffer.dir\parser.c.obj" \
+"CMakeFiles\Cbuffer.dir\ast.c.obj" \
+"CMakeFiles\Cbuffer.dir\symbols.c.obj"
 
 # External object files for target Cbuffer
 Cbuffer_EXTERNAL_OBJECTS =
@@ -150,9 +210,12 @@ Cbuffer.exe: CMakeFiles\Cbuffer.dir\main.c.obj
 Cbuffer.exe: CMakeFiles\Cbuffer.dir\buffer.c.obj
 Cbuffer.exe: CMakeFiles\Cbuffer.dir\utils.c.obj
 Cbuffer.exe: CMakeFiles\Cbuffer.dir\lexer.c.obj
+Cbuffer.exe: CMakeFiles\Cbuffer.dir\parser.c.obj
+Cbuffer.exe: CMakeFiles\Cbuffer.dir\ast.c.obj
+Cbuffer.exe: CMakeFiles\Cbuffer.dir\symbols.c.obj
 Cbuffer.exe: CMakeFiles\Cbuffer.dir\build.make
 Cbuffer.exe: CMakeFiles\Cbuffer.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\tcous\Desktop\Others\Cbuffer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable Cbuffer.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\tcous\Desktop\Others\Cbuffer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable Cbuffer.exe"
 	C:\Users\tcous\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\211.7442.42\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\Cbuffer.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MICROS~3\2019\ENTERP~1\VC\Tools\MSVC\1429~1.300\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\Cbuffer.dir\objects1.rsp @<<
  /out:Cbuffer.exe /implib:Cbuffer.lib /pdb:C:\Users\tcous\Desktop\Others\Cbuffer\cmake-build-debug\Cbuffer.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

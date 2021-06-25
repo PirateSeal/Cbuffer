@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/tcous/Desktop/Others/Cbuffer/ast.c">
+			<Option target="Cbuffer"/>
+		</Unit>
+		<Unit filename="C:/Users/tcous/Desktop/Others/Cbuffer/ast.h">
+			<Option target="Cbuffer"/>
+		</Unit>
 		<Unit filename="C:/Users/tcous/Desktop/Others/Cbuffer/buffer.c">
 			<Option target="Cbuffer"/>
 		</Unit>
@@ -97,6 +103,18 @@
 			<Option target="Cbuffer"/>
 		</Unit>
 		<Unit filename="C:/Users/tcous/Desktop/Others/Cbuffer/main.c">
+			<Option target="Cbuffer"/>
+		</Unit>
+		<Unit filename="C:/Users/tcous/Desktop/Others/Cbuffer/parser.c">
+			<Option target="Cbuffer"/>
+		</Unit>
+		<Unit filename="C:/Users/tcous/Desktop/Others/Cbuffer/parser.h">
+			<Option target="Cbuffer"/>
+		</Unit>
+		<Unit filename="C:/Users/tcous/Desktop/Others/Cbuffer/symbols.c">
+			<Option target="Cbuffer"/>
+		</Unit>
+		<Unit filename="C:/Users/tcous/Desktop/Others/Cbuffer/symbols.h">
 			<Option target="Cbuffer"/>
 		</Unit>
 		<Unit filename="C:/Users/tcous/Desktop/Others/Cbuffer/utils.c">

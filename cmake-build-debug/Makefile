@@ -126,6 +126,33 @@ Cbuffer\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cbuffer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Cbuffer.dir\build
 .PHONY : Cbuffer\fast
 
+ast.obj: ast.c.obj
+
+.PHONY : ast.obj
+
+# target to build an object file
+ast.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cbuffer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Cbuffer.dir\ast.c.obj
+.PHONY : ast.c.obj
+
+ast.i: ast.c.i
+
+.PHONY : ast.i
+
+# target to preprocess a source file
+ast.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cbuffer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Cbuffer.dir\ast.c.i
+.PHONY : ast.c.i
+
+ast.s: ast.c.s
+
+.PHONY : ast.s
+
+# target to generate assembly for a file
+ast.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cbuffer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Cbuffer.dir\ast.c.s
+.PHONY : ast.c.s
+
 buffer.obj: buffer.c.obj
 
 .PHONY : buffer.obj
@@ -207,6 +234,60 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cbuffer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Cbuffer.dir\main.c.s
 .PHONY : main.c.s
 
+parser.obj: parser.c.obj
+
+.PHONY : parser.obj
+
+# target to build an object file
+parser.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cbuffer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Cbuffer.dir\parser.c.obj
+.PHONY : parser.c.obj
+
+parser.i: parser.c.i
+
+.PHONY : parser.i
+
+# target to preprocess a source file
+parser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cbuffer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Cbuffer.dir\parser.c.i
+.PHONY : parser.c.i
+
+parser.s: parser.c.s
+
+.PHONY : parser.s
+
+# target to generate assembly for a file
+parser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cbuffer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Cbuffer.dir\parser.c.s
+.PHONY : parser.c.s
+
+symbols.obj: symbols.c.obj
+
+.PHONY : symbols.obj
+
+# target to build an object file
+symbols.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cbuffer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Cbuffer.dir\symbols.c.obj
+.PHONY : symbols.c.obj
+
+symbols.i: symbols.c.i
+
+.PHONY : symbols.i
+
+# target to preprocess a source file
+symbols.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cbuffer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Cbuffer.dir\symbols.c.i
+.PHONY : symbols.c.i
+
+symbols.s: symbols.c.s
+
+.PHONY : symbols.s
+
+# target to generate assembly for a file
+symbols.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cbuffer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Cbuffer.dir\symbols.c.s
+.PHONY : symbols.c.s
+
 utils.obj: utils.c.obj
 
 .PHONY : utils.obj
@@ -243,6 +324,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Cbuffer
+	@echo ... ast.obj
+	@echo ... ast.i
+	@echo ... ast.s
 	@echo ... buffer.obj
 	@echo ... buffer.i
 	@echo ... buffer.s
@@ -252,6 +336,12 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... parser.obj
+	@echo ... parser.i
+	@echo ... parser.s
+	@echo ... symbols.obj
+	@echo ... symbols.i
+	@echo ... symbols.s
 	@echo ... utils.obj
 	@echo ... utils.i
 	@echo ... utils.s
