@@ -6,25 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/Users/PirateSeal/dev/Cbuffer/buffer.h
+C:/Users/tcous/Desktop/Others/Cbuffer/buffer.h
 stdio.h
 -
 stdbool.h
 -
 
-/Users/PirateSeal/dev/Cbuffer/lexer.c
+C:/Users/tcous/Desktop/Others/Cbuffer/lexer.c
+stdlib.h
+-
+assert.h
+-
+buffer.h
+C:/Users/tcous/Desktop/Others/Cbuffer/buffer.h
+lexer.h
+C:/Users/tcous/Desktop/Others/Cbuffer/lexer.h
+ctype.h
+C:/Users/tcous/Desktop/Others/Cbuffer/ctype.h
+
+C:/Users/tcous/Desktop/Others/Cbuffer/lexer.h
+buffer.h
+C:/Users/tcous/Desktop/Others/Cbuffer/buffer.h
+
+C:/Users/tcous/Desktop/Others/Cbuffer/main.c
+stdio.h
+-
 stdlib.h
 -
 buffer.h
-/Users/PirateSeal/dev/Cbuffer/buffer.h
+C:/Users/tcous/Desktop/Others/Cbuffer/buffer.h
 lexer.h
-/Users/PirateSeal/dev/Cbuffer/lexer.h
-stdbool.h
-/Users/PirateSeal/dev/Cbuffer/stdbool.h
-ctype.h
-/Users/PirateSeal/dev/Cbuffer/ctype.h
-
-/Users/PirateSeal/dev/Cbuffer/lexer.h
-buffer.h
-/Users/PirateSeal/dev/Cbuffer/buffer.h
+C:/Users/tcous/Desktop/Others/Cbuffer/lexer.h
 

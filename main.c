@@ -8,12 +8,11 @@ int main() {
 
     FILE *file = NULL;
     file = fopen("text.txt", "r");
-    if (file == NULL)printf("Oups \n");
+    if (file == NULL)return 1;
     buffer_t *buffer = malloc(sizeof(buffer_t));
-
     buf_init(buffer, file);
-    long l =  lexer_getnumber(buffer);
-    printf("%d", l);
+    lexer_getop(buffer);
+    printf("%s",lexer_getalphanum(buffer));
 
     return 0;
 }

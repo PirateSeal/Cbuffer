@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Cbuffer.dir/main.c.o CMakeFiles/Cbuffer.dir/buffer.c.o CMakeFiles/Cbuffer.dir/utils.c.o CMakeFiles/Cbuffer.dir/lexer.c.o -o Cbuffer 

@@ -49,7 +49,7 @@ void lexer_assert_blank(buffer_t *buffer, char *msg);
 
 bool isalphanum(char chr);
 
-//bool isnumber(char chr);
+bool isnumber(char chr);
 
 bool isop(char chr);
 
