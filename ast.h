@@ -25,7 +25,7 @@ typedef enum {
     AST_BINARY_LOWER,
     AST_BINARY_LOWER_STRICT,
     AST_BINARY_HIGHER_STRICT,
-    AST_BINARY_HIGHER;
+    AST_BINARY_HIGHER
 } ast_binary_e;
 
 typedef struct ast_t {

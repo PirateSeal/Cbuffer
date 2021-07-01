@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Cbuffer.dir/lexer.c.obj"
   "CMakeFiles/Cbuffer.dir/main.c.obj"
   "CMakeFiles/Cbuffer.dir/parser.c.obj"
+  "CMakeFiles/Cbuffer.dir/projet.c.obj"
   "CMakeFiles/Cbuffer.dir/symbols.c.obj"
   "CMakeFiles/Cbuffer.dir/utils.c.obj"
   "Cbuffer.exe"

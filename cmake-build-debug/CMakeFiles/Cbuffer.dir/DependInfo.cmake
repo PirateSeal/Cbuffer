@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/tcous/Desktop/Others/Cbuffer/lexer.c" "C:/Users/tcous/Desktop/Others/Cbuffer/cmake-build-debug/CMakeFiles/Cbuffer.dir/lexer.c.obj"
   "C:/Users/tcous/Desktop/Others/Cbuffer/main.c" "C:/Users/tcous/Desktop/Others/Cbuffer/cmake-build-debug/CMakeFiles/Cbuffer.dir/main.c.obj"
   "C:/Users/tcous/Desktop/Others/Cbuffer/parser.c" "C:/Users/tcous/Desktop/Others/Cbuffer/cmake-build-debug/CMakeFiles/Cbuffer.dir/parser.c.obj"
+  "C:/Users/tcous/Desktop/Others/Cbuffer/projet.c" "C:/Users/tcous/Desktop/Others/Cbuffer/cmake-build-debug/CMakeFiles/Cbuffer.dir/projet.c.obj"
   "C:/Users/tcous/Desktop/Others/Cbuffer/symbols.c" "C:/Users/tcous/Desktop/Others/Cbuffer/cmake-build-debug/CMakeFiles/Cbuffer.dir/symbols.c.obj"
   "C:/Users/tcous/Desktop/Others/Cbuffer/utils.c" "C:/Users/tcous/Desktop/Others/Cbuffer/cmake-build-debug/CMakeFiles/Cbuffer.dir/utils.c.obj"
   )

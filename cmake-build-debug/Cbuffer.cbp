@@ -111,6 +111,9 @@
 		<Unit filename="C:/Users/tcous/Desktop/Others/Cbuffer/parser.h">
 			<Option target="Cbuffer"/>
 		</Unit>
+		<Unit filename="C:/Users/tcous/Desktop/Others/Cbuffer/projet.c">
+			<Option target="Cbuffer"/>
+		</Unit>
 		<Unit filename="C:/Users/tcous/Desktop/Others/Cbuffer/symbols.c">
 			<Option target="Cbuffer"/>
 		</Unit>

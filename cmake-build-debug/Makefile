@@ -261,6 +261,33 @@ parser.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cbuffer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Cbuffer.dir\parser.c.s
 .PHONY : parser.c.s
 
+projet.obj: projet.c.obj
+
+.PHONY : projet.obj
+
+# target to build an object file
+projet.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cbuffer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Cbuffer.dir\projet.c.obj
+.PHONY : projet.c.obj
+
+projet.i: projet.c.i
+
+.PHONY : projet.i
+
+# target to preprocess a source file
+projet.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cbuffer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Cbuffer.dir\projet.c.i
+.PHONY : projet.c.i
+
+projet.s: projet.c.s
+
+.PHONY : projet.s
+
+# target to generate assembly for a file
+projet.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cbuffer.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Cbuffer.dir\projet.c.s
+.PHONY : projet.c.s
+
 symbols.obj: symbols.c.obj
 
 .PHONY : symbols.obj
@@ -339,6 +366,9 @@ help:
 	@echo ... parser.obj
 	@echo ... parser.i
 	@echo ... parser.s
+	@echo ... projet.obj
+	@echo ... projet.i
+	@echo ... projet.s
 	@echo ... symbols.obj
 	@echo ... symbols.i
 	@echo ... symbols.s
