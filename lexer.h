@@ -53,5 +53,6 @@ bool isnumber(char chr);
 
 bool isop(char chr);
 
+bool isStringNumber(char* chr);
 
 #endif //CBUFFER_LEXER_H

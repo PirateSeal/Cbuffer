@@ -13,12 +13,17 @@ CMakeFiles\Cbuffer.dir\lexer.c.obj: ..\lexer.c
 CMakeFiles\Cbuffer.dir\lexer.c.obj: ..\lexer.h
 
 CMakeFiles\Cbuffer.dir\main.c.obj: ..\buffer.h
-CMakeFiles\Cbuffer.dir\main.c.obj: ..\lexer.h
 CMakeFiles\Cbuffer.dir\main.c.obj: ..\main.c
+CMakeFiles\Cbuffer.dir\main.c.obj: ..\parser.h
 
+CMakeFiles\Cbuffer.dir\parser.c.obj: ..\ast.h
+CMakeFiles\Cbuffer.dir\parser.c.obj: ..\buffer.h
+CMakeFiles\Cbuffer.dir\parser.c.obj: ..\lexer.h
 CMakeFiles\Cbuffer.dir\parser.c.obj: ..\parser.c
 CMakeFiles\Cbuffer.dir\parser.c.obj: ..\parser.h
+CMakeFiles\Cbuffer.dir\parser.c.obj: ..\symbols.h
 
+CMakeFiles\Cbuffer.dir\projet.c.obj: ..\ast.h
 CMakeFiles\Cbuffer.dir\projet.c.obj: ..\projet.c
 
 CMakeFiles\Cbuffer.dir\symbols.c.obj: ..\ast.h

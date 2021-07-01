@@ -1,5 +1,4 @@
-++6622 0633
-fonction addition (entier tmp1, entier tmp2) : entier{
+fonction addition (entier tmp1 , entier tmp2 ) : entier{
 retourner tmp1 + tmp2;
 }
 

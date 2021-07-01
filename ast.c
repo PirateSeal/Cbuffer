@@ -11,14 +11,19 @@ ast_list_t *ast_list_new_node(ast_t *elem) {
     newAst->ast = elem;
     return newAst;
 };
+ast_list_t * ast_list_new(){
+    ast_list_t * new_list = malloc(sizeof(ast_list_t));
+    new_list->ast = NULL;
+    new_list->next = NULL;
+};
 
-ast_list_t *ast_list_add(ast_list_t **list, ast_t *elem) {
-    if (list == NULL || elem == NULL) exit(EXIT_FAILURE);
+ast_list_t *ast_list_add(ast_list_t *list, ast_t *elem) {
+    if ( elem == NULL) exit(EXIT_FAILURE);
     ast_list_t *newAst = ast_list_new_node(elem);
 
-    if ((*list)->ast == NULL) *list = newAst;
+    if (list == NULL || list->ast == NULL) list = newAst;
     else {
-        ast_list_t *temp = (*list)->next;
+        ast_list_t *temp = list->next;
         while (temp != NULL) {
             temp = temp->next;
         }
@@ -91,7 +96,7 @@ ast_t *ast_new_integer(long val) {
     return newAst;
 }
 
-ast_t *ast_new_variable(char *name, int type) {
+ast_t *ast_new_variable(char *name, ast_type_e type) {
     ast_t *newAst = malloc(sizeof(ast_t));
     newAst->type = AST_VARIABLE;
     newAst->var.type = type;
@@ -109,7 +114,7 @@ ast_t *ast_new_binary(ast_binary_e op, ast_t *left, ast_t *right) {
     return newAst;
 }
 
-ast_t *ast_new_function(char *name, int return_type, ast_list_t *params, ast_list_t *stmts) {
+ast_t *ast_new_function(char *name, ast_type_e return_type, ast_list_t *params, ast_list_t *stmts) {
     ast_t *newAst = malloc(sizeof(ast_t));
     newAst->type = AST_FUNCTION;
     newAst->function.name = name;

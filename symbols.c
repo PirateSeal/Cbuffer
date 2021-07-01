@@ -6,7 +6,7 @@
 #include <string.h>
 #include "symbols.h"
 
-symbol_t *sym_new(char *name, int type, ast_t *attributes) {
+symbol_t *sym_new(char *name, ast_type_e type, ast_t *attributes) {
     symbol_t *new_symbol = malloc(sizeof(symbol_t));
     if (new_symbol == NULL) exit(EXIT_FAILURE);
     new_symbol->name = name;
@@ -29,12 +29,12 @@ void sym_delete(symbol_t *sym) {
     }
 };
 
-void sym_add(symbol_list_t **list, symbol_t *sym) {
-    if (list == NULL || sym == NULL) exit(EXIT_FAILURE);
+void sym_add(symbol_list_t *list, symbol_t *sym) {
+    if ( sym == NULL) exit(EXIT_FAILURE);
     symbol_list_t *newSymList = symbol_list_new_node(sym);
-    if ((*list)->sym == NULL) *list = newSymList;
+    if (list == NULL ||  list->sym == NULL) list = newSymList;
     else {
-        symbol_list_t *temp = (*list)->next;
+        symbol_list_t *temp = list->next;
         while (temp != NULL) {
             temp = temp->next;
         }
@@ -43,16 +43,14 @@ void sym_add(symbol_list_t **list, symbol_t *sym) {
 };
 
 
-void sym_remove(symbol_list_t **list, symbol_t *sym) {
-    if (list == NULL || sym == NULL) exit(EXIT_FAILURE);
-    symbol_list_t *temp = (*list);
-
+void sym_remove(symbol_list_t *list, symbol_t *sym) {
+    if (sym == NULL) exit(EXIT_FAILURE);
+    symbol_list_t * temp = list;
     if (temp == NULL)return;
-
     if (temp->sym == sym) {
         sym_delete(sym);
         symbol_list_t *temp2 = temp->next;
-        (*list) = temp2;
+        list = temp2;
         free(temp);
     } else {
         while (temp->next != NULL || temp->next->sym == sym) {
@@ -68,8 +66,14 @@ void sym_remove(symbol_list_t **list, symbol_t *sym) {
 };
 
 symbol_t *sym_search(symbol_list_t *list, char *name) {
-    if (list == NULL || name == NULL)return NULL;
+    if (list == NULL || list->sym == NULL || name == NULL)return NULL;
     symbol_t *sym = list->sym;
     if (strcmp(sym->name, name) == 0) return sym;
     return sym_search(list->next, name);
+};
+
+symbol_list_t* sym_list_new(){
+    symbol_list_t* new_list = malloc(sizeof (symbol_list_t));
+    new_list->next = NULL;
+    new_list->sym = NULL;
 };

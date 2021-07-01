@@ -32,9 +32,15 @@ typedef enum {
     AST_UNARY_PARENTHESIS,
     AST_UNARY_NEGATION,
     AST_UNARY_INCREMENTATION,
+    AST_UNARY_DECREMENTATION,
 } ast_unary_e;
 
-typedef struct ast_t;
+typedef enum {
+    AST_TYPE_INTEGER,
+    AST_TYPE_VOID,
+    AST_TYPE_UNDEFINED,
+} ast_type_e;
+
 
 typedef struct ast_list {
     struct ast_t *ast;
@@ -47,7 +53,7 @@ typedef struct ast_t {
         long integer;
         struct {
             char *name;
-            int type;
+            ast_type_e type;
         } var;
         struct {
             ast_binary_e op;
@@ -64,7 +70,7 @@ typedef struct ast_t {
         } call;
         struct {
             char *name;
-            int return_type;
+            ast_type_e return_type;
             ast_list_t *params;
             ast_list_t *stmts;
         } function;
@@ -97,11 +103,11 @@ typedef struct ast_t {
 
 ast_t *ast_new_integer(long val);
 
-ast_t *ast_new_variable(char *name, int type);
+ast_t *ast_new_variable(char *name, ast_type_e type);
 
 ast_t *ast_new_binary(ast_binary_e op, ast_t *left, ast_t *right);
 
-ast_t *ast_new_function(char *name, int return_type, ast_list_t *params, ast_list_t *stmts);
+ast_t *ast_new_function(char *name, ast_type_e return_type, ast_list_t *params, ast_list_t *stmts);
 
 ast_t *ast_new_fncall(char *name, ast_list_t *args);
 
@@ -119,8 +125,9 @@ ast_t *ast_new_return(ast_t *expr);
 
 ast_list_t *ast_list_new_node(ast_t *elem);
 
-ast_list_t *ast_list_add(ast_list_t **list, ast_t *elem);
+ast_list_t *ast_list_add(ast_list_t *list, ast_t *elem);
 
+ast_list_t * ast_list_new();
 
 void free_ast(ast_t *ast);
 

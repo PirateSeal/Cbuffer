@@ -2,7 +2,7 @@
 // Created by Thomas Cousin on 18/06/2021.
 //
 #include <stdlib.h>
-#include <assert.h>
+#include <string.h>
 #include "buffer.h"
 #include "lexer.h"
 #include "ctype.h"
@@ -27,9 +27,10 @@ char *lexer_getop(buffer_t *buffer) {
 }
 
 void lexer_assert(buffer_t* buffer, char chr, char *msg){
+    buf_skipblank(buffer);
     char c = buf_getchar(buffer);
     if (c != chr) {
-        printf("%s", msg);
+        printf("%s -> got %s instead", msg, c);
         exit(EXIT_FAILURE);
     }
 }
@@ -98,7 +99,7 @@ char *lexer_getalphanum(buffer_t *buffer) {
     if (count > 1 || isalnum(c)) {
         chaine = malloc(sizeof(char) * count);
         buf_rollback_and_unlock(buffer, count);
-        buf_getnchar(buffer, chaine, count);
+        buf_getnchar(buffer, chaine, count-1);
         chaine[count - 1] = '\0';
     } else {
         buf_rollback_and_unlock(buffer, 1);
@@ -159,6 +160,17 @@ bool isalphanum(char chr) {
 bool isnumber(char chr) {
     return isdigit(chr);
 };
+
+bool isStringNumber(char* chr) {
+    bool isCorrect = true;
+    size_t length = strlen( chr );
+    for( int i=0; i<length; i++ ) {
+        if ( ! isdigit( chr[i] ) ) {
+            isCorrect = false;
+        }
+    }
+    return isCorrect;
+}
 
 bool isop(char chr) {
     return chr == '!' ||

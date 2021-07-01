@@ -14,12 +14,17 @@ CMakeFiles/Cbuffer.dir/lexer.c.obj
  C:/Users/tcous/Desktop/Others/Cbuffer/lexer.h
 CMakeFiles/Cbuffer.dir/main.c.obj
  C:/Users/tcous/Desktop/Others/Cbuffer/buffer.h
- C:/Users/tcous/Desktop/Others/Cbuffer/lexer.h
  C:/Users/tcous/Desktop/Others/Cbuffer/main.c
+ C:/Users/tcous/Desktop/Others/Cbuffer/parser.h
 CMakeFiles/Cbuffer.dir/parser.c.obj
+ C:/Users/tcous/Desktop/Others/Cbuffer/ast.h
+ C:/Users/tcous/Desktop/Others/Cbuffer/buffer.h
+ C:/Users/tcous/Desktop/Others/Cbuffer/lexer.h
  C:/Users/tcous/Desktop/Others/Cbuffer/parser.c
  C:/Users/tcous/Desktop/Others/Cbuffer/parser.h
+ C:/Users/tcous/Desktop/Others/Cbuffer/symbols.h
 CMakeFiles/Cbuffer.dir/projet.c.obj
+ C:/Users/tcous/Desktop/Others/Cbuffer/ast.h
  C:/Users/tcous/Desktop/Others/Cbuffer/projet.c
 CMakeFiles/Cbuffer.dir/symbols.c.obj
  C:/Users/tcous/Desktop/Others/Cbuffer/ast.h
