@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "buffer.h"
 #include "lexer.h"
+#include "parser.h"
 
 
 int main() {
@@ -11,8 +12,7 @@ int main() {
     if (file == NULL)return 1;
     buffer_t *buffer = malloc(sizeof(buffer_t));
     buf_init(buffer, file);
-    lexer_getop(buffer);
-    printf("%s",lexer_getalphanum(buffer));
+    parser(buffer);
 
     return 0;
 }

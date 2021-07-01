@@ -28,6 +28,19 @@ typedef enum {
     AST_BINARY_HIGHER
 } ast_binary_e;
 
+typedef enum {
+    AST_UNARY_PARENTHESIS,
+    AST_UNARY_NEGATION,
+    AST_UNARY_INCREMENTATION,
+} ast_unary_e;
+
+typedef struct ast_t;
+
+typedef struct ast_list {
+    struct ast_t *ast;
+    struct ast_list *next;
+} ast_list_t;
+
 typedef struct ast_t {
     ast_node_type_e type;
     union {
@@ -42,21 +55,21 @@ typedef struct ast_t {
             struct ast_t *right;
         } binary;
         struct {
-            char op;
+            ast_unary_e op;
             struct ast_t *operand;
         } unary;
         struct {
             char *name;
-            struct ast_list_t *args;
+            ast_list_t *args;
         } call;
         struct {
             char *name;
             int return_type;
-            struct ast_list_t *params;
-            struct ast_list_t *stmts;
+            ast_list_t *params;
+            ast_list_t *stmts;
         } function;
         struct {
-            struct ast_list_t *stmts;
+            ast_list_t *stmts;
         } compound_stmt;
         struct {
             struct ast_t *lvalue;
@@ -81,10 +94,6 @@ typedef struct ast_t {
     };
 } ast_t;
 
-typedef struct ast_list {
-    ast_t * ast;
-    struct ast_list* next;
-}ast_list_t;
 
 ast_t *ast_new_integer(long val);
 
@@ -111,5 +120,8 @@ ast_t *ast_new_return(ast_t *expr);
 ast_list_t *ast_list_new_node(ast_t *elem);
 
 ast_list_t *ast_list_add(ast_list_t **list, ast_t *elem);
+
+
+void free_ast(ast_t *ast);
 
 #endif //CBUFFER_AST_H

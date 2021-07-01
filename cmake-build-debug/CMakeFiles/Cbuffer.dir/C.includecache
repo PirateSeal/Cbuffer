@@ -6,35 +6,43 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/tcous/Desktop/Others/Cbuffer/buffer.h
+C:/Users/tcous/Desktop/Others/Cbuffer/ast.c
 stdio.h
 -
+stdlib.h
+-
+ast.h
+C:/Users/tcous/Desktop/Others/Cbuffer/ast.h
+
+C:/Users/tcous/Desktop/Others/Cbuffer/ast.h
 stdbool.h
 -
 
-C:/Users/tcous/Desktop/Others/Cbuffer/lexer.c
-stdlib.h
--
-assert.h
--
-buffer.h
-C:/Users/tcous/Desktop/Others/Cbuffer/buffer.h
-lexer.h
-C:/Users/tcous/Desktop/Others/Cbuffer/lexer.h
-ctype.h
-C:/Users/tcous/Desktop/Others/Cbuffer/ctype.h
+C:/Users/tcous/Desktop/Others/Cbuffer/parser.c
+parser.h
+C:/Users/tcous/Desktop/Others/Cbuffer/parser.h
 
-C:/Users/tcous/Desktop/Others/Cbuffer/lexer.h
-buffer.h
-C:/Users/tcous/Desktop/Others/Cbuffer/buffer.h
+C:/Users/tcous/Desktop/Others/Cbuffer/parser.h
 
-C:/Users/tcous/Desktop/Others/Cbuffer/main.c
+C:/Users/tcous/Desktop/Others/Cbuffer/projet.c
 stdio.h
 -
 stdlib.h
 -
-buffer.h
-C:/Users/tcous/Desktop/Others/Cbuffer/buffer.h
-lexer.h
-C:/Users/tcous/Desktop/Others/Cbuffer/lexer.h
+time.h
+-
+
+C:/Users/tcous/Desktop/Others/Cbuffer/symbols.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+symbols.h
+C:/Users/tcous/Desktop/Others/Cbuffer/symbols.h
+
+C:/Users/tcous/Desktop/Others/Cbuffer/symbols.h
+ast.h
+C:/Users/tcous/Desktop/Others/Cbuffer/ast.h
 
