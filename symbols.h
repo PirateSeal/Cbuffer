@@ -23,7 +23,7 @@ void sym_delete(symbol_t *sym);
 
 void sym_remove(symbol_list_t *list, symbol_t *sym);
 
-void sym_add(symbol_list_t *list, symbol_t *sym);
+void sym_add(symbol_list_t **list, symbol_t *sym);
 
 symbol_t *sym_search(symbol_list_t *list, char *name);
 

@@ -17,20 +17,20 @@ ast_list_t * ast_list_new(){
     new_list->next = NULL;
 };
 
-ast_list_t *ast_list_add(ast_list_t *list, ast_t *elem) {
-    if ( elem == NULL) exit(EXIT_FAILURE);
+ast_list_t *ast_list_add(ast_list_t **list, ast_t *elem) {
+    if ( list == NULL || elem == NULL) exit(EXIT_FAILURE);
     ast_list_t *newAst = ast_list_new_node(elem);
 
-    if (list == NULL || list->ast == NULL) list = newAst;
+    if ((*list)->ast == NULL) *list = newAst;
     else {
-        ast_list_t *temp = list->next;
-        while (temp != NULL) {
-            temp = temp->next;
+        ast_list_t **temp = list;
+        while (*temp != NULL) {
+            temp = &((*temp)->next);
         }
-        temp = newAst;
+        *temp = newAst;
     }
     return newAst;
-};
+}
 
 void free_ast_list(ast_list_t *list) {
     if (list != NULL) {

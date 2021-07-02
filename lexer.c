@@ -9,7 +9,7 @@
 
 char *lexer_getop(buffer_t *buffer) {
     char c = buf_getchar(buffer);
-    if(!isop(c)) return NULL;
+    if (!isop(c)) return NULL;
     buf_lock(buffer);
     char c2 = buf_getchar(buffer);
     char *op = malloc(sizeof(char) * 3);
@@ -26,7 +26,7 @@ char *lexer_getop(buffer_t *buffer) {
     return op;
 }
 
-void lexer_assert(buffer_t* buffer, char chr, char *msg){
+void lexer_assert(buffer_t *buffer, char chr, char *msg) {
     buf_skipblank(buffer);
     char c = buf_getchar(buffer);
     if (c != chr) {
@@ -34,6 +34,7 @@ void lexer_assert(buffer_t* buffer, char chr, char *msg){
         exit(EXIT_FAILURE);
     }
 }
+
 void lexer_assert_simplechar(buffer_t *buffer, char chr, char *msg) {
     lexer_assert(buffer, chr, msg);
 }
@@ -45,6 +46,15 @@ void lexer_assert_twopoints(buffer_t *buffer, char *msg) {
 
 void lexer_assert_newline(buffer_t *buffer, char *msg) {
     lexer_assert(buffer, '\n', msg);
+
+}
+
+void lexer_assert_sinon(buffer_t *buffer, char *msg) {
+    char *sinon = lexer_getalphanum(buffer);
+    if (strcmp(sinon, "sinon") != 0) {
+        printf("%s -> got %s instead", msg, sinon);
+        exit(EXIT_FAILURE);
+    }
 
 }
 
@@ -99,7 +109,7 @@ char *lexer_getalphanum(buffer_t *buffer) {
     if (count > 1 || isalnum(c)) {
         chaine = malloc(sizeof(char) * count);
         buf_rollback_and_unlock(buffer, count);
-        buf_getnchar(buffer, chaine, count-1);
+        buf_getnchar(buffer, chaine, count - 1);
         chaine[count - 1] = '\0';
     } else {
         buf_rollback_and_unlock(buffer, 1);
@@ -161,11 +171,11 @@ bool isnumber(char chr) {
     return isdigit(chr);
 };
 
-bool isStringNumber(char* chr) {
+bool isStringNumber(char *chr) {
     bool isCorrect = true;
-    size_t length = strlen( chr );
-    for( int i=0; i<length; i++ ) {
-        if ( ! isdigit( chr[i] ) ) {
+    size_t length = strlen(chr);
+    for (int i = 0; i < length; i++) {
+        if (!isdigit(chr[i])) {
             isCorrect = false;
         }
     }

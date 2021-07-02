@@ -29,18 +29,18 @@ void sym_delete(symbol_t *sym) {
     }
 };
 
-void sym_add(symbol_list_t *list, symbol_t *sym) {
+void sym_add(symbol_list_t **list, symbol_t *sym) {
     if ( sym == NULL) exit(EXIT_FAILURE);
     symbol_list_t *newSymList = symbol_list_new_node(sym);
-    if (list == NULL ||  list->sym == NULL) list = newSymList;
+    if ((*list)->sym == NULL) *list = newSymList;
     else {
-        symbol_list_t *temp = list->next;
-        while (temp != NULL) {
-            temp = temp->next;
+        symbol_list_t **temp = list;
+        while (*temp != NULL) {
+            temp = &((*temp)->next);
         }
-        temp = newSymList;
+        *temp = newSymList;
     }
-};
+}
 
 
 void sym_remove(symbol_list_t *list, symbol_t *sym) {

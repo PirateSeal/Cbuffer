@@ -47,6 +47,8 @@ void lexer_assert_equalsign(buffer_t *buffer, char *msg);
 
 void lexer_assert_blank(buffer_t *buffer, char *msg);
 
+void lexer_assert_sinon(buffer_t* buffer, char *msg);
+
 bool isalphanum(char chr);
 
 bool isnumber(char chr);

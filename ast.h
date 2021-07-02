@@ -125,7 +125,7 @@ ast_t *ast_new_return(ast_t *expr);
 
 ast_list_t *ast_list_new_node(ast_t *elem);
 
-ast_list_t *ast_list_add(ast_list_t *list, ast_t *elem);
+ast_list_t *ast_list_add(ast_list_t **list, ast_t *elem);
 
 ast_list_t * ast_list_new();
 
